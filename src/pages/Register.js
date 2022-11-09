@@ -12,15 +12,10 @@ import Container from 'components/login/Container';
 
 export default function Register() {
     return (
-        <Page>
+        <div className="bg-login-background bg-cover max-height:auto bg-center">
             <DefaultNavbar />
             <Container>
                 <Card>
-                    <CardHeader color="lightBlue">
-                        <H5 color="white" style={{ marginBottom: 0 }}>
-                            Register
-                        </H5>
-                    </CardHeader>
 
                     <CardBody>
                         <div className="mb-10 px-4">
@@ -62,7 +57,6 @@ export default function Register() {
                     </CardFooter>
                 </Card>
             </Container>
-            <SimpleFooter />
-        </Page>
+    </div>
     );
 }

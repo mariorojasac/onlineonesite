@@ -34,6 +34,10 @@ export default function DefaultNavbar() {
         <NavbarCollapse open={openNavbar}>
           <Nav>
             <div className="flex flex-col z-50 lg:flex-row lg:items-center">
+            <NavLink href="/" rel="noreferrer" ripple="light">
+                <Icon name="apps" size="2xl" />
+                &nbsp;Home
+              </NavLink>
               <NavLink href="/profile" rel="noreferrer" ripple="light">
                 <Icon name="description" size="2xl" />
                 &nbsp;About
@@ -69,10 +73,10 @@ export default function DefaultNavbar() {
                     </Link>
                   </Dropdown>
                 </div> */}
-              <NavLink href="/register" rel="noreferrer" ripple="light">
+              {/* <NavLink href="/register" rel="noreferrer" ripple="light">
                 <Icon family="font-awesome" name="fab fa-github" size="xl" />
                 &nbsp;Projects
-              </NavLink>
+              </NavLink> */}
               {/* <NavLink
                 href=""
                 target="_blank"

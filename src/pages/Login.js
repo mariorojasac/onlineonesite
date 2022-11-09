@@ -10,43 +10,137 @@ import DefaultNavbar from 'components/DefaultNavbar';
 import SimpleFooter from 'components/SimpleFooter';
 import Page from 'components/login/Page';
 import Container from 'components/login/Container';
+import H3 from "@material-tailwind/react/Heading3";
+import Icon from "@material-tailwind/react/Icon";
+import LeadText from "@material-tailwind/react/LeadText";
 
 export default function Login() {
     return (
         <Page>
             <DefaultNavbar />
             <Container>
-                <Card>
-                    <CardHeader color="lightBlue">
-                        <H5 color="white" style={{ marginBottom: 0 }}>
-                            Login
-                        </H5>
-                    </CardHeader>
-
+                <Card className="m-12"> 
+                <div className="text-center my-8">
+              <H3 color="gray">Web Development</H3>
+            </div>
                     <CardBody>
-                        <div className="mb-12 px-4 bg-bb">
-                            <InputIcon
-                                type="email"
+                    <div className="mb-10 py-2 border-t border-gray-200 text-center">
+              <div className="flex flex-wrap justify-center">
+                <div className="w-full lg:w-9/12 px-4 flex flex-col items-center space-x-4">
+                  <LeadText color="blueGray">
+                   
+                  </LeadText>
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                </div>
+              </div>
+            </div>
+                    </CardBody>
+                    <CardFooter>
+                        <div className="flex justify-center bg-bb">
+                            <Button
                                 color="lightBlue"
-                                placeholder="Email Address"
-                                iconName="email"
-                            />
+                                buttonType="link"
+                                size="lg"
+                                ripple="dark"
+                            >
+                                Get Started
+                            </Button>
                         </div>
-                        <div className="mb-8 px-4">
-                            <InputIcon
-                                type="password"
+                    </CardFooter>
+                </Card>
+                <Card className="m-12">
+
+                <div className="text-center my-8">
+                    <H3 color="gray">Media Production</H3>
+                </div>
+                    <CardBody>
+                    <div className="mb-10 py-2 border-t border-gray-200 text-center">
+              <div className="flex flex-wrap justify-center">
+                <div className="w-full lg:w-9/12 px-4 flex flex-col items-center space-x-4">
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                </div>
+              </div>
+            </div>
+                    </CardBody>
+                    <CardFooter>
+                        <div className="flex justify-center bg-bb">
+                            <Button
                                 color="lightBlue"
-                                placeholder="Password"
-                                iconName="lock"
-                            />
+                                buttonType="link"
+                                size="lg"
+                                ripple="dark"
+                            >
+                                Get Started
+                            </Button>
                         </div>
-                        <div className="mb-4 px-4">
-                            <Checkbox
-                                color="lightBlue"
-                                text="Remember Me"
-                                id="remember"
-                            />
-                        </div>
+                    </CardFooter>
+                </Card>
+                <Card className="m-12">
+
+                <div className="text-center my-8">
+                    <H3 color="gray">iPhone Repair</H3>
+                </div>
+                    <CardBody>
+                    <div className="mb-10 py-2 border-t border-gray-200 text-center">
+              <div className="flex flex-wrap justify-center">
+                <div className="w-full lg:w-9/12 px-4 flex flex-col items-center space-x-4">
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                  <LeadText color="blueGray">
+                    An artist of considerable range, Jenna the name taken by
+                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
+                    performs and records all of his own music, giving it a warm,
+                    intimate feel with a solid groove structure. An artist of
+                    considerable range.
+                  </LeadText>
+                </div>
+              </div>
+            </div>
                     </CardBody>
                     <CardFooter>
                         <div className="flex justify-center bg-bb">
@@ -62,7 +156,6 @@ export default function Login() {
                     </CardFooter>
                 </Card>
             </Container>
-            <SimpleFooter />
         </Page>
     );
 }

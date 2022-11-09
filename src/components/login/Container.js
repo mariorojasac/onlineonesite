@@ -1,7 +1,7 @@
 export default function Container({ children }) {
     return (
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="max-w-sm w-96">{children}</div>
+        <div className="container max-w-7xl mx-auto px-4 lg:pt-24">
+            <div className=" flex flex-wrap justify-center">{children}</div>
         </div>
     );
 }
