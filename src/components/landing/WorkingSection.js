@@ -8,7 +8,7 @@ import LeadText from "@material-tailwind/react/LeadText";
 import Paragraph from "@material-tailwind/react/Paragraph";
 import StatusCard from "components/landing/StatusCard";
 import Teamwork from "assets/img/pexels-fauxels-3184292.jpg";
-import { BsFillAlarmFill } from "react-icons/bs";
+// import { BsFillAlarmFill } from "react-icons/bs";
 
 export default function WorkingSection() {
   return (
