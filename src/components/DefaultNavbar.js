@@ -46,6 +46,10 @@ export default function DefaultNavbar() {
                 <Icon name="apps" size="2xl" />
                 &nbsp;Services
               </NavLink>
+              {/* <NavLink href="/login" rel="noreferrer" ripple="light">
+                <Icon name="apps" size="2xl" />
+                &nbsp;Community
+              </NavLink> */}
               {/* <div className="text-white">
                   <Dropdown
                     color="transparent"

@@ -38,14 +38,20 @@ export default function Content() {
               <div className="flex flex-wrap justify-center">
                 <div className="w-full lg:w-9/12 px-4 flex flex-col items-center space-x-4">
                   <LeadText color="blueGray">
-                    mission statement
+                    We get you online ready!
                   </LeadText>
                   <LeadText color="blueGray">
-                    About us / who we are
+                    Online One is a full-service web design, development, and digital media agency in Indianapolis. We take pride in the relationships we have with our customers. We don’t just build websites and walk away. We partner with companies to not only establish but maintain an online presence that caters to their changing needs. We leverage digital technology so that our clients can do what they do best, run their OWN businesses. 
                   </LeadText>
                   <LeadText color="blueGray">
-                    Creating a better future for our communities
+                    Creating a better future for our communities.
+                    Our company’s passion for giving back is to empower our communities to have an online presence. 
+                    What makes us unique is our pursuit to be extraordinary in everything that we do, 
+                    which includes caring about other people and helping in any way we can. 
+                    This is why we created the get indy online program targeting small business 
+                    and young professionals who make an impact in our communities learn more here.
                   </LeadText>
+                  <Button>Click To Learn More!</Button>
                 </div>
               </div>
             </div>
