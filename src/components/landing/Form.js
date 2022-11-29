@@ -20,7 +20,7 @@ export default function Form() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                onSubmit={(e) => e.preventDefault()}
+                // onSubmit={(e) => e.preventDefault()}
               >
                 <div className="flex gap-8 mt-16 mb-12">
                   <Input
