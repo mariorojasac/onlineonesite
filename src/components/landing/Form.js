@@ -5,6 +5,9 @@ import Textarea from '@material-tailwind/react/Textarea';
 import Button from '@material-tailwind/react/Button';
 
 export default function Form() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
     return (
       <div className="flex flex-wrap justify-center mt-24 ">
         <div className="w-full lg:w-8/12 px-4">
@@ -20,7 +23,7 @@ export default function Form() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={handleSubmit}
               >
                 <div className="flex gap-8 mt-16 mb-12">
                   <Input
