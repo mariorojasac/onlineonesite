@@ -20,11 +20,12 @@ export default function Form() {
                 </Paragraph>
               </div>
               <form
+                data-netlify="true"
                 name="contact"
                 method="POST"
-                data-netlify="true"
                 onSubmit={handleSubmit}
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="flex gap-8 mt-16 mb-12">
                   <Input
                     type="text"
