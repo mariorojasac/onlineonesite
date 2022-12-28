@@ -1,6 +1,4 @@
-import Input from '@material-tailwind/react/Input';
-import Textarea from '@material-tailwind/react/Textarea';
-import Button from '@material-tailwind/react/Button';
+
 
 export default function Form() {
 
@@ -9,19 +7,18 @@ export default function Form() {
               <form
                 name="contact"
                 method="POST"
-                netlify
                 data-netlify="true"
                 onSubmit="submit"
               >
                 <input type="hidden" name="form-name" value="contact"/>
                 <div className="flex gap-8 mt-16 mb-12">
-                  <Input
+                  <input
                     type="text"
                     name="name"
                     placeholder="Full Name"
                     color="lightBlue"
                   />
-                  <Input
+                  <input
                     type="email"
                     name="email"
                     placeholder="Email Address"
@@ -29,16 +26,15 @@ export default function Form() {
                   />
                 </div>
 
-                <Textarea
-                  name="message"
-                  color="lightBlue"
-                  placeholder="Message"
-                />
+                <textarea name="message"
+                  placeholder="Message">
+                </textarea>
+              
 
                 <div className="flex justify-center mt-10">
-                  <Button type="submit" color="lightBlue" ripple="light">
+                  <button type="submit" color="lightBlue" ripple="light">
                     Send Message
-                  </Button>
+                  </button>
                 </div>
               </form>
       </div>
