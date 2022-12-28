@@ -1,24 +1,39 @@
-
+import H3 from '@material-tailwind/react/Heading3';
+import Paragraph from '@material-tailwind/react/Paragraph';
+import Input from '@material-tailwind/react/Input';
+import Textarea from '@material-tailwind/react/Textarea';
+import Button from '@material-tailwind/react/Button';
 
 export default function Form() {
-
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
     return (
       <div className="flex flex-wrap justify-center mt-24 ">
+        <div className="w-full lg:w-8/12 px-4">
+          <div className="relative flex flex-col min-w-0 break-words w-full mb-6">
+            <div className="flex-auto p-5 lg:p-10">
+              <div className="w-full text-center">
+                <H3 color="gray">Want to work with us?</H3>
+                <Paragraph color="blueGray">
+                  Complete this form and we will get back to you in 24 hours.
+                </Paragraph>
+              </div>
               <form
+                data-netlify="true"
                 name="contact"
                 method="POST"
-                data-netlify="true"
-                onSubmit="submit"
+                onSubmit={handleSubmit}
               >
-                <input type="hidden" name="form-name" value="contact"/>
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="flex gap-8 mt-16 mb-12">
-                  <input
+                  <Input
                     type="text"
                     name="name"
                     placeholder="Full Name"
                     color="lightBlue"
                   />
-                  <input
+                  <Input
                     type="email"
                     name="email"
                     placeholder="Email Address"
@@ -26,17 +41,21 @@ export default function Form() {
                   />
                 </div>
 
-                <textarea name="message"
-                  placeholder="Message">
-                </textarea>
-              
+                <Textarea
+                  name="message"
+                  color="lightBlue"
+                  placeholder="Message"
+                />
 
                 <div className="flex justify-center mt-10">
-                  <button type="submit" color="lightBlue" ripple="light">
+                  <Button type="submit" color="lightBlue" ripple="light">
                     Send Message
-                  </button>
+                  </Button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
       </div>
     );
 }
