@@ -1,6 +1,6 @@
 import Title from "components/landing/Title";
 import ContactCard from "components/landing/ContactCard";
-import Form from "components/landing/Form";
+import Form from "components/landing/Forms";
 
 export default function ContactSection() {
   return (
