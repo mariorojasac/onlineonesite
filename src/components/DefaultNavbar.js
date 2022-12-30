@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HashLink } from 'react-router-hash-link';
 // import { Link } from "react-router-dom";
 import Navbar from "@material-tailwind/react/Navbar";
 import NavbarContainer from "@material-tailwind/react/NavbarContainer";
@@ -89,11 +90,12 @@ export default function DefaultNavbar() {
               >
                 Portal
               </NavLink> */}
-              <a
+              {/* <a
                 href="mailto:mariorojas.ac@gmail.com?subject=New%20Website%20Development%20Request"
                 target="_blank"
                 rel="noreferrer"
-              >
+              > */}
+              <HashLink smooth to='/#contactForm' >  
                 <Button
                   color="transparent"
                   className="bg-white text-black ml-4"
@@ -101,7 +103,8 @@ export default function DefaultNavbar() {
                 >
                   Contact Us
                 </Button>
-              </a>
+                </HashLink>
+              {/* </a> */}
             </div>
           </Nav>
         </NavbarCollapse>
