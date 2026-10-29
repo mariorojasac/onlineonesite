@@ -1,6 +1,6 @@
 // Site settings. Fill in PHONE (digits only, e.g. "2605551234") to show the
 // Call buttons; leave it empty to hide them.
-const PHONE = "";
+const PHONE = "3178097843";
 
 // EmailJS account used by the contact form (same IDs as the old React site).
 const EMAILJS = {
