@@ -112,8 +112,9 @@ p { margin: 0 0 1em; }
 .plan { background: #fff; border: 2px solid var(--line); border-radius: var(--radius); padding: 28px 24px; display: flex; flex-direction: column; position: relative; }
 .plan.featured { border-color: var(--blue); box-shadow: 0 18px 40px rgba(6,82,233,.14); }
 .badge { position: absolute; top: -13px; left: 24px; background: var(--accent); color: #fff; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; padding: 4px 10px; border-radius: 20px; }
-.price { font-size: 2.6rem; font-weight: 800; color: var(--navy); margin: 0; line-height: 1.1; }
+.plan h3 { font-size: 1.6rem; color: var(--navy); margin: 0; }
 .plan-for { color: var(--muted); margin: 6px 0 16px; }
+.pricing-cta { font-weight: 700; font-size: 1.1rem; margin: 0; }
 .plan ul { padding-left: 0; list-style: none; margin: 0 0 18px; flex: 1; }
 .plan li { padding: 6px 0 6px 26px; position: relative; border-top: 1px solid #eef2f6; }
 .plan li::before { content: "✓"; position: absolute; left: 2px; color: #16a34a; font-weight: 800; }
@@ -124,7 +125,6 @@ p { margin: 0 0 1em; }
 .care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .care-card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; padding: 16px; font-size: .95rem; }
 .care-card p:last-child { margin: 0; color: #d8e4f2; }
-.price-sm { color: var(--sky); font-weight: 800; margin-left: 6px; }
 
 .addons { margin-top: 22px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
 .addons summary { font-weight: 700; cursor: pointer; }
@@ -134,9 +134,7 @@ p { margin: 0 0 1em; }
 .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
 .svc { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; }
 .svc p { color: #3a4656; }
-.svc-price { font-weight: 800; color: var(--blue) !important; margin-top: auto; }
 .svc-bundle { background: linear-gradient(160deg, #eef5ff, #fff); border-color: #b9d0fb; }
-.svc-bundle .svc-price { margin-top: 0; }
 .svc-bundle .btn { margin-top: auto; }
 
 /* Steps */

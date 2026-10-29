@@ -16,7 +16,8 @@ It is plain HTML, CSS and JavaScript with no build step, so there is nothing to 
 ## Common edits
 
 - **Show the Call buttons:** set `PHONE` at the top of `site/main.js` (digits only).
-- **Change prices or packages:** edit the `#pricing` section in `site/index.html`, and the `makesOffer` prices in the JSON-LD block near the top.
+- **Change packages:** edit the `#pricing` section in `site/index.html`. Prices are not shown on purpose; visitors call or request a quote.
+- **Change the phone number:** update `PHONE` in `site/main.js` and the `tel:` links and `telephone` in `site/index.html`.
 - **Custom domain:** after connecting it in Netlify, replace `onlineonesite.netlify.app` in `site/robots.txt` and `site/sitemap.xml`.
 
 ## Preview locally

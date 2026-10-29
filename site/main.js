@@ -61,11 +61,11 @@ form.addEventListener("submit", async (e) => {
     );
     form.reset();
     status.classList.add("ok");
-    status.textContent = "Thanks! I'll get back to you within one business day.";
+    status.textContent = "Thanks! We'll get back to you within one business day.";
   } catch (err) {
     status.classList.add("err");
     status.textContent = PHONE
-      ? "Sorry, that didn't send. Please call or text me instead."
+      ? "Sorry, that didn't send. Please call or text us instead."
       : "Sorry, that didn't send. Please try again in a minute.";
   } finally {
     submit.disabled = false;
